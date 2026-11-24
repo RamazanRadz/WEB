@@ -1,113 +1,190 @@
-@import url("fonts.css");
-
-body {
-    font-family: 'Inter', sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.breadcrumbs {
-    list-style: none;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #121216;
+    color: #f3efe6;
+    line-height: 1.5;
+}
+
+/* shapka zakreplena  */
+.shapka {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1b1b22;
+    border-bottom: 1px solid #32323e;
+}
+
+.shapka-vnutri {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 12px 20px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    margin: 0;
-    background-color: #f4f7fb;
-    font-size: 14px;
-    color: #1F3F68;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.breadcrumbs li:not(:last-child)::after {
-    content: "/";
-    margin-left: 8px;
-    color: #5A98D0;
-}
-
-.breadcrumbs a {
+.logotip-ssylka {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f3efe6;
     text-decoration: none;
-    color: #5A98D0;
+    font-weight: bold;
 }
 
-.breadcrumbs a:hover {
+.logotip-kartinka {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.menyu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menyu a {
+    color: #f3efe6;
+    text-decoration: none;
+}
+
+.menyu a:hover {
     text-decoration: underline;
 }
 
-/* Параграфы */
-.text {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
+/* osnovnoi blok  */
+.glavny-blok {
+    flex: 1 0 auto;
 }
 
-/* Заголовок h1 */
-.title-h1 {
-    font-size: 64px;
-    color: #1F3F68;
+.pervy-ekran {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-/*страница Контакты */
-.title-h2 {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
+.setka-ekrana {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 28px;
+    align-items: start;
 }
 
-/* Заголовки h3 */
-.title-h3 {
-    font-size: 36px;
-    text-align: center;
+.levy-blok {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* Заголовки h4 */
-.title-h4 {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
+.levy-blok h1 {
+    font-size: 34px;
+    line-height: 1.2;
 }
 
-/* Форма на странице Контакты с изображением на заднем фоне */
-.contact-form {
-    background-image: url("../../../logo2.png");
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 540px;
-    margin: 20px auto;
+.levy-blok p {
+    color: #cfc9be;
 }
 
-/* Поля ввода input и textarea */
-.form-input {
-    width: 100%;
-    padding: 12px 16px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-    font-size: 16px;
+.forma-zayavki {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+    padding: 18px;
+    background-color: #1c1c24;
+    border: 1px solid #32323e;
+    border-radius: 6px;
 }
 
-/* Кнопка Submit  */
-.submit-btn {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
+.pole {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pole input {
+    padding: 8px 10px;
+    background-color: #121216;
+    border: 1px solid #484859;
+    border-radius: 4px;
+    color: #f3efe6;
+}
+
+.knopka {
+    align-self: flex-start;
+    padding: 9px 18px;
+    background-color: #8f2d3b;
+    color: #fff;
     border: none;
-    padding: 15px 50px;
-    width: 100%;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
-.submit-btn:hover {
-    background: #356EAD;
+.knopka:hover {
+    background-color: #a63546;
+}
+
+.kartochka {
+    padding: 18px;
+    background-color: #1c1c24;
+    border: 1px solid #32323e;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kartochka p {
+    color: #cfc9be;
+}
+
+.kartochka-kartinka {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+/* podval  */
+.podval {
+    background-color: #1b1b22;
+    border-top: 1px solid #32323e;
+}
+
+.podval-vnutri {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.podval-tekst p,
+.prava {
+    color: #b5afa4;
+    font-size: 14px;
+}
+
+.kontakty-spisok {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    color: #cfc9be;
 }

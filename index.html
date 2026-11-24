@@ -2,263 +2,79 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Porta Umbrarum — Практика 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porta Umbrarum</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!--shapka-->
-    <header class="shapka-saita">
-        <img src="logo.png" alt="Логотип компании" style="width: 100%; height: auto; display: block;">
-        <nav class="glavnoe-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+    <!-- shapka -->
+    <header class="shapka">
+        <div class="shapka-vnutri">
+            <a href="index.html" class="logotip-ssylka">
+                <img src="logo2.png" alt="Логотип" width="36" height="36" class="logotip-kartinka">
+                <span>Porta Umbrarum</span>
+            </a>
+
+            <nav class="menyu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <hr>
+    <!-- osnovnoi blok -->
+    <main class="glavny-blok">
+        <section class="pervy-ekran">
+            <div class="setka-ekrana">
+                <div class="levy-blok">
+                    <h1>Porta Umbrarum Magna</h1>
+                    <p>Знания, стертые из истории. Реликвии, погребенные под пеплом веков. Мы открываем доступ к тому, что официальный мир объявил опасным мифом.</p>
 
-    <main class="osnovnoi-kontent">
+                    <form action="#" method="post" class="forma-zayavki">
+                        <div class="pole">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+79666666666">
+                        </div>
 
-        <!--geroi-->
-        <section class="sekciya-geroya">
-            <div class="levyi-stolbec">
-                <h1>Porta Umbrarum Magna</h1>
-                <p>Знания, стертые из истории. Мобильные порталы и веб-ритуалы любой сложности для тех, кто не боится тьмы.</p>
-                <form class="forma-prizyva" action="#" method="post">
-                    <p>Оставьте контакты, и мы вызовем вас за 30 минут</p>
-                    <label for="phone-ritual">Телефон</label>
-                    <input type="tel" id="phone-ritual" name="phone-ritual">
-                    <label for="name-cultist">Имя</label>
-                    <input type="text" id="name-cultist" name="name-cultist">
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
-            <aside class="bokovoi-ekran">
-                <h2>Экраны бездны</h2>
-                <p>Примеры темных интерфейсов из глубины веков.</p>
-                <img src="logo.png" alt="Скриншот портала 1" width="250">
-                <img src="logo.png" alt="Скриншот портала 2" width="250">
-            </aside>
-        </section>
+                        <div class="pole">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" placeholder="Введите имя">
+                        </div>
 
-        <hr>
-
-        <!--polnyi cikl-->
-        <section class="sekciya-cikla">
-            <div class="opisanie-cikla">
-                <h2>Mercatus Tenebris Aeternus</h2>
-                <p>Полный цикл создания: от древнего замысла и архитектуры до запуска и вечной поддержки.</p>
-                <h3>Arcana Mortis Mercatus</h3>
-                <p>Оккультные артефакты и темные знания для избранных служителей бездны.</p>
-                <h4>Cultus Mortis Antiquus</h4>
-                <p>Запретные реликвии древности ждут тех, кто не боится тьмы.</p>
-            </div>
-            <div class="spisok-napravlenii">
-                <h3>Направления обрядов</h3>
-                <ul>
-                    <li>iOS разработка</li>
-                    <li>Android разработка</li>
-                    <li>Веб-разработка</li>
-                    <li>UI/UX дизайн</li>
-                    <li>Тестирование</li>
-                    <li>Аналитика</li>
-                    <li>Консалтинг</li>
-                </ul>
-            </div>
-        </section>
-
-        <hr>
-
-        <!--otrasli-->
-        <section class="sekciya-otraslei">
-            <h2>Более 100 проектов в 15 отраслях</h2>
-            <p>Опыт работы в светских и запретных сферах.</p>
-            <div class="spiski-otraslei">
-                <ul>
-                    <li>E-commerce</li>
-                    <li>Финтех</li>
-                    <li>Медиа</li>
-                    <li>Строительство</li>
-                    <li>Туризм</li>
-                </ul>
-                <ul>
-                    <li>Образование</li>
-                    <li>Логистика</li>
-                    <li>Здравоохранение</li>
-                    <li>Недвижимость</li>
-                    <li>Рестораны</li>
-                </ul>
-                <ul>
-                    <li>IT и связь</li>
-                    <li>Ритейл</li>
-                    <li>Продажа души</li>
-                    <li>Религия</li>
-                    <li>Порталы</li>
-                </ul>
-            </div>
-        </section>
-
-        <hr>
-
-        <!--proekty-->
-        <section class="sekciya-proektov">
-            <h2>Проекты, которыми мы гордимся</h2>
-            <p>Реликвии, погребенные под пеплом веков, теперь в сети.</p>
-            <div class="filtry-proektov">
-                <ul>
-                    <li>Все</li>
-                    <li>Образование</li>
-                    <li>Здравоохранение</li>
-                    <li>Финтех</li>
-                    <li>E-commerce</li>
-                    <li>Соцсети</li>
-                    <li>Медиа</li>
-                </ul>
-            </div>
-            <article class="kartochka-proekta">
-                <div class="dannye-proekta">
-                    <h3>I-teka</h3>
-                    <p>Приложение для поиска темных сервисов и общения избранных.</p>
-                    <ul>
-                        <li>400K+ душ</li>
-                        <li>200 000+ ритуалов</li>
-                        <li><a href="https://example.com">Перейти в портал</a></li>
-                    </ul>
+                        <button type="submit" class="knopka">Отправить</button>
+                    </form>
                 </div>
-                <div class="kartinka-proekta">
-                    <img src="logo.png" alt="Проект I-teka" width="300">
+
+                <div class="pravy-blok">
+                    <div class="kartochka">
+                        <h2>Mercatus Tenebris</h2>
+                        <p>Оккультные артефакты и темные знания для избранных служителей бездны.</p>
+                        <img src="logo2.png" alt="Превью раздела" width="220" height="160" class="kartochka-kartinka">
+                    </div>
                 </div>
-            </article>
-        </section>
-
-        <hr>
-
-        <!--obsuzhdenie-->
-        <section class="sekciya-obsuzhdeniya">
-            <div class="tekst-obsuzhdeniya">
-                <h2>Обсудим ваш проект</h2>
-                <p>Напишите нам, и мы оценим задачу и нужную жертву.</p>
-            </div>
-            <form class="forma-obsuzhdeniya" action="#" method="post">
-                <label for="phone-discuss">Телефон</label>
-                <input type="tel" id="phone-discuss" name="phone-discuss">
-                <label for="email-discuss">Email</label>
-                <input type="email" id="email-discuss" name="email-discuss">
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
-
-        <hr>
-
-        <!--etapy-->
-        <section class="sekciya-etapov">
-            <h2>Этапы разработки</h2>
-            <p>Шаги, через которые проходит каждый проект.</p>
-            <div class="setka-etapov">
-                <article class="kartochka-etapa">
-                    <h3>Анализ</h3>
-                    <p>Изучаем свитки требований и задачи.</p>
-                </article>
-                <article class="kartochka-etapa">
-                    <h3>Дизайн</h3>
-                    <p>Рисуем схемы, макеты и интерфейсы.</p>
-                </article>
-                <article class="kartochka-etapa">
-                    <h3>Разработка</h3>
-                    <p>Собираем код, логику и базы данных.</p>
-                </article>
-                <article class="kartochka-etapa">
-                    <h3>Тестирование</h3>
-                    <p>Ловим баги и проклятия до запуска.</p>
-                </article>
-                <article class="kartochka-etapa">
-                    <h3>Запуск</h3>
-                    <p>Выкатываем проект в продакшн.</p>
-                </article>
-                <article class="kartochka-etapa">
-                    <h3>Поддержка</h3>
-                    <p>Следим за стабильностью и обновлениями.</p>
-                </article>
             </div>
         </section>
-
-        <hr>
-
-        <!--komanda-->
-        <section class="sekciya-komandy">
-            <div class="opisanie-komandy">
-                <h2>Наша команда</h2>
-                <p>Служители кода, дизайна и аналитики.</p>
-                <ul>
-                    <li>28 человек</li>
-                    <li>+100 проектов</li>
-                    <li>7 лет в деле</li>
-                </ul>
-            </div>
-            <div class="foto-komandy">
-                <img src="logo.png" alt="Команда проекта" width="320">
-            </div>
-        </section>
-
-        <hr>
-
-        <!--kniga-->
-        <section class="sekciya-knigi">
-            <form class="forma-knigi" action="#" method="post">
-                <h2>Получите книгу бесплатно</h2>
-                <p>Оставьте контакты, чтобы забрать древний трактат.</p>
-                <label for="name-book">Имя</label>
-                <input type="text" id="name-book" name="name-book">
-                <label for="email-book">Email</label>
-                <input type="email" id="email-book" name="email-book">
-                <button type="submit">Забрать книгу</button>
-            </form>
-            <div class="oblozhka-knigi">
-                <img src="logo.png" alt="Обложка книги" width="220">
-            </div>
-        </section>
-
-        <hr>
-
-        <!--faq-->
-        <section class="sekciya-faq">
-            <h2>FAQ</h2>
-            <p>Частые вопросы перед началом работы.</p>
-            <div class="spisok-faq">
-                <article class="vopros-faq">
-                    <h3>Сколько стоит приложение?</h3>
-                    <p>Зависит от сложности и объема задач.</p>
-                </article>
-                <article class="vopros-faq">
-                    <h3>Как защищаете данные?</h3>
-                    <p>Подписываем соглашение и бережем тайны.</p>
-                </article>
-                <article class="vopros-faq">
-                    <h3>Есть ли поддержка после релиза?</h3>
-                    <p>Да, помогаем с обновлениями и исправлениями.</p>
-                </article>
-            </div>
-        </section>
-
     </main>
 
-    <hr>
+    <!-- podval -->
+    <footer class="podval">
+        <div class="podval-vnutri">
+            <div class="podval-tekst">
+                <h3>Связь с нами</h3>
+                <p>Мы всегда рады вашей жертве</p>
+            </div>
 
-    <!--Podval-->
-    <footer class="podval-saita">
-        <!--zagolovok footer-->
-        <h3>Связь с нами</h3>
-        <p>Мы всегда рады вашей жертве</p>
-        <hr>
-        <!--kontakt-->
-        <ul class="spisok-kontaktov">
-            <li>Продажа души</li>
-            <li>+79666666666</li>
-            <li>Anticrist@godlox.devilrulit.ru</li>
-        </ul>
-        <p>Все права защищены</p>
+            <ul class="kontakty-spisok">
+                <li>Продажа души</li>
+                <li>+79666666666</li>
+                <li>Anticrist@godlox.devilrulit.ru</li>
+            </ul>
+
+            <p class="prava">Все права защищены</p>
+        </div>
     </footer>
 
 </body>
