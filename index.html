@@ -1,252 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBиC mobile — Development</title>
+    <title>Porta Umbrarum — Практика 3</title>
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="logo2.png" alt="WEBиC mobile logo" width="120">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="#full-cycle">Services</a></li>
-                <li><a href="#industries">Industries</a></li>
-                <li><a href="#projects">Portfolio</a></li>
-                <li><a href="#stages">Stages</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#faq">FAQ</a></li>
+    <!--shapka-->
+    <header class="shapka-saita">
+        <img src="logo.png" alt="Логотип компании" style="width: 100%; height: auto; display: block;">
+        <nav class="glavnoe-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <div class="header-contacts">
-            <ul class="contact-links">
-                <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-            </ul>
-        </div>
     </header>
 
     <hr>
 
-    <main class="page-main">
+    <main class="osnovnoi-kontent">
 
-        <section class="hero-section" id="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Development of mobile applications and web services of any complexity</h1>
-                <p class="hero-description">We build reliable mobile apps and scalable web platforms tailored to business goals.</p>
-                <form class="hero-callback-form" action="#" method="post">
-                    <p class="form-caption">Leave your contacts and we will call you back within 30 minutes</p>
-                    <label for="hero-phone">Phone number</label>
-                    <input type="tel" id="hero-phone" name="phone" placeholder="+7 (999) 000-00-00">
-                    <label for="hero-name">Your name</label>
-                    <input type="text" id="hero-name" name="name" placeholder="Name">
-                    <button type="submit">Send request</button>
+        <!--geroi-->
+        <section class="sekciya-geroya">
+            <div class="levyi-stolbec">
+                <h1>Porta Umbrarum Magna</h1>
+                <p>Знания, стертые из истории. Мобильные порталы и веб-ритуалы любой сложности для тех, кто не боится тьмы.</p>
+                <form class="forma-prizyva" action="#" method="post">
+                    <p>Оставьте контакты, и мы вызовем вас за 30 минут</p>
+                    <label for="phone-ritual">Телефон</label>
+                    <input type="tel" id="phone-ritual" name="phone-ritual">
+                    <label for="name-cultist">Имя</label>
+                    <input type="text" id="name-cultist" name="name-cultist">
+                    <button type="submit">Отправить</button>
                 </form>
             </div>
-            <aside class="hero-showcase">
-                <h2 class="showcase-title">Mobile app previews</h2>
-                <p class="showcase-note">Examples of mobile interfaces from recent releases.</p>
-                <img src="logo2.png" alt="Mobile application screen preview 1" width="280">
-                <img src="logo2.png" alt="Mobile application screen preview 2" width="280">
+            <aside class="bokovoi-ekran">
+                <h2>Экраны бездны</h2>
+                <p>Примеры темных интерфейсов из глубины веков.</p>
+                <img src="logo.png" alt="Скриншот портала 1" width="250">
+                <img src="logo.png" alt="Скриншот портала 2" width="250">
             </aside>
         </section>
 
         <hr>
 
-        <section class="full-cycle-section" id="full-cycle">
-            <div class="cycle-overview">
-                <h2 class="section-title">Full development cycle</h2>
-                <p class="cycle-lead">We cover every stage from idea and architecture to launch and support.</p>
-                <h3 class="cycle-subtitle">Tech</h3>
-                <p class="cycle-text">Swift, Kotlin, TypeScript, React, Node.js, Python, PostgreSQL.</p>
-                <h3 class="cycle-subtitle">Stack</h3>
-                <p class="cycle-text">REST API, GraphQL, Docker, CI/CD, cloud infrastructure.</p>
+        <!--polnyi cikl-->
+        <section class="sekciya-cikla">
+            <div class="opisanie-cikla">
+                <h2>Mercatus Tenebris Aeternus</h2>
+                <p>Полный цикл создания: от древнего замысла и архитектуры до запуска и вечной поддержки.</p>
+                <h3>Arcana Mortis Mercatus</h3>
+                <p>Оккультные артефакты и темные знания для избранных служителей бездны.</p>
+                <h4>Cultus Mortis Antiquus</h4>
+                <p>Запретные реликвии древности ждут тех, кто не боится тьмы.</p>
             </div>
-            <div class="cycle-directions">
-                <h3 class="directions-title">Key directions</h3>
-                <ul class="directions-list">
-                    <li>iOS development</li>
-                    <li>Android development</li>
-                    <li>Web development</li>
-                    <li>UI/UX design</li>
-                    <li>Testing</li>
-                    <li>Analytics</li>
-                    <li>Consulting</li>
-                </ul>
-            </div>
-        </section>
-
-        <hr>
-
-        <section class="industries-section" id="industries">
-            <h2 class="section-title">Developed more than 100 projects in 15 industries</h2>
-            <p class="industries-intro">Experience across commercial and enterprise domains.</p>
-            <div class="industries-grid">
-                <ul class="industries-column">
-                    <li>E-commerce</li>
-                    <li>FinTech &amp; banking</li>
-                    <li>Media</li>
-                    <li>Construction</li>
-                    <li>Travel &amp; tourism</li>
-                </ul>
-                <ul class="industries-column">
-                    <li>Education</li>
-                    <li>Logistics &amp; delivery</li>
-                    <li>Healthcare</li>
-                    <li>Real estate</li>
-                    <li>Restaurants</li>
-                </ul>
-                <ul class="industries-column">
-                    <li>IT &amp; telecom</li>
-                    <li>Retail</li>
-                    <li>Services</li>
-                    <li>Religion</li>
-                    <li>EdTech &amp; portals</li>
+            <div class="spisok-napravlenii">
+                <h3>Направления обрядов</h3>
+                <ul>
+                    <li>iOS разработка</li>
+                    <li>Android разработка</li>
+                    <li>Веб-разработка</li>
+                    <li>UI/UX дизайн</li>
+                    <li>Тестирование</li>
+                    <li>Аналитика</li>
+                    <li>Консалтинг</li>
                 </ul>
             </div>
         </section>
 
         <hr>
 
-        <section class="projects-section" id="projects">
-            <h2 class="section-title">Projects we are proud of</h2>
-            <p class="projects-intro">Selected case studies with measurable product impact.</p>
-            <div class="project-filters">
-                <ul class="filters-list">
-                    <li>All</li>
-                    <li>Education</li>
-                    <li>Healthcare</li>
-                    <li>FinTech</li>
+        <!--otrasli-->
+        <section class="sekciya-otraslei">
+            <h2>Более 100 проектов в 15 отраслях</h2>
+            <p>Опыт работы в светских и запретных сферах.</p>
+            <div class="spiski-otraslei">
+                <ul>
                     <li>E-commerce</li>
-                    <li>Social apps</li>
-                    <li>Media</li>
+                    <li>Финтех</li>
+                    <li>Медиа</li>
+                    <li>Строительство</li>
+                    <li>Туризм</li>
+                </ul>
+                <ul>
+                    <li>Образование</li>
+                    <li>Логистика</li>
+                    <li>Здравоохранение</li>
+                    <li>Недвижимость</li>
+                    <li>Рестораны</li>
+                </ul>
+                <ul>
+                    <li>IT и связь</li>
+                    <li>Ритейл</li>
+                    <li>Продажа души</li>
+                    <li>Религия</li>
+                    <li>Порталы</li>
                 </ul>
             </div>
-            <article class="project-card">
-                <div class="project-details">
-                    <h3 class="project-title">I-teka</h3>
-                    <p class="project-description">Mobile platform connecting users, services, and local communities with fast booking and notifications.</p>
-                    <p class="project-meta">Region: International</p>
-                    <ul class="project-metrics">
-                        <li>400K+ active users</li>
-                        <li>200 000+ completed actions</li>
-                    </ul>
-                    <ul class="store-links">
-                        <li><a href="#app-store">App Store</a></li>
-                        <li><a href="#google-play">Google Play</a></li>
+        </section>
+
+        <hr>
+
+        <!--proekty-->
+        <section class="sekciya-proektov">
+            <h2>Проекты, которыми мы гордимся</h2>
+            <p>Реликвии, погребенные под пеплом веков, теперь в сети.</p>
+            <div class="filtry-proektov">
+                <ul>
+                    <li>Все</li>
+                    <li>Образование</li>
+                    <li>Здравоохранение</li>
+                    <li>Финтех</li>
+                    <li>E-commerce</li>
+                    <li>Соцсети</li>
+                    <li>Медиа</li>
+                </ul>
+            </div>
+            <article class="kartochka-proekta">
+                <div class="dannye-proekta">
+                    <h3>I-teka</h3>
+                    <p>Приложение для поиска темных сервисов и общения избранных.</p>
+                    <ul>
+                        <li>400K+ душ</li>
+                        <li>200 000+ ритуалов</li>
+                        <li><a href="https://example.com">Перейти в портал</a></li>
                     </ul>
                 </div>
-                <div class="project-media">
-                    <img src="logo2.png" alt="I-teka mobile application on smartphones" width="320">
+                <div class="kartinka-proekta">
+                    <img src="logo.png" alt="Проект I-teka" width="300">
                 </div>
             </article>
         </section>
 
         <hr>
 
-        <section class="discuss-section" id="discuss">
-            <div class="discuss-info">
-                <h2 class="discuss-title">Let's discuss Your project</h2>
-                <p class="discuss-text">Tell us about your task and we will propose a technical solution and timeline.</p>
+        <!--obsuzhdenie-->
+        <section class="sekciya-obsuzhdeniya">
+            <div class="tekst-obsuzhdeniya">
+                <h2>Обсудим ваш проект</h2>
+                <p>Напишите нам, и мы оценим задачу и нужную жертву.</p>
             </div>
-            <form class="discuss-form" action="#" method="post">
-                <label for="discuss-phone">Phone number</label>
-                <input type="tel" id="discuss-phone" name="discuss_phone" placeholder="+7 (999) 000-00-00">
-                <label for="discuss-email">Email</label>
-                <input type="email" id="discuss-email" name="discuss_email" placeholder="name@example.com">
-                <button type="submit">Discuss project</button>
+            <form class="forma-obsuzhdeniya" action="#" method="post">
+                <label for="phone-discuss">Телефон</label>
+                <input type="tel" id="phone-discuss" name="phone-discuss">
+                <label for="email-discuss">Email</label>
+                <input type="email" id="email-discuss" name="email-discuss">
+                <button type="submit">Отправить</button>
             </form>
         </section>
 
         <hr>
 
-        <section class="stages-section" id="stages">
-            <h2 class="section-title">Application Development Stages</h2>
-            <p class="stages-intro">Transparent workflow divided into clear milestones.</p>
-            <div class="stages-grid">
-                <article class="stage-card">
-                    <h3 class="stage-title">Analysis</h3>
-                    <p class="stage-description">Requirements gathering, specification, and architecture planning.</p>
+        <!--etapy-->
+        <section class="sekciya-etapov">
+            <h2>Этапы разработки</h2>
+            <p>Шаги, через которые проходит каждый проект.</p>
+            <div class="setka-etapov">
+                <article class="kartochka-etapa">
+                    <h3>Анализ</h3>
+                    <p>Изучаем свитки требований и задачи.</p>
                 </article>
-                <article class="stage-card">
-                    <h3 class="stage-title">Design</h3>
-                    <p class="stage-description">User flows, wireframes, UI kit, and interactive prototypes.</p>
+                <article class="kartochka-etapa">
+                    <h3>Дизайн</h3>
+                    <p>Рисуем схемы, макеты и интерфейсы.</p>
                 </article>
-                <article class="stage-card">
-                    <h3 class="stage-title">Development</h3>
-                    <p class="stage-description">Frontend, backend, and mobile application implementation.</p>
+                <article class="kartochka-etapa">
+                    <h3>Разработка</h3>
+                    <p>Собираем код, логику и базы данных.</p>
                 </article>
-                <article class="stage-card">
-                    <h3 class="stage-title">Testing</h3>
-                    <p class="stage-description">Functional, regression, and performance quality assurance.</p>
+                <article class="kartochka-etapa">
+                    <h3>Тестирование</h3>
+                    <p>Ловим баги и проклятия до запуска.</p>
                 </article>
-                <article class="stage-card">
-                    <h3 class="stage-title">Launching</h3>
-                    <p class="stage-description">Production deployment, store publication, and monitoring setup.</p>
+                <article class="kartochka-etapa">
+                    <h3>Запуск</h3>
+                    <p>Выкатываем проект в продакшн.</p>
                 </article>
-                <article class="stage-card">
-                    <h3 class="stage-title">Support</h3>
-                    <p class="stage-description">Ongoing maintenance, updates, and feature scaling.</p>
+                <article class="kartochka-etapa">
+                    <h3>Поддержка</h3>
+                    <p>Следим за стабильностью и обновлениями.</p>
                 </article>
             </div>
         </section>
 
         <hr>
 
-        <section class="team-section" id="team">
-            <div class="team-summary">
-                <h2 class="section-title">Our team</h2>
-                <p class="team-description">Engineers, designers, analysts, and project managers working as one unit.</p>
-                <ul class="team-stats">
-                    <li>28 specialists</li>
-                    <li>+100 delivered projects</li>
-                    <li>7 years in development</li>
+        <!--komanda-->
+        <section class="sekciya-komandy">
+            <div class="opisanie-komandy">
+                <h2>Наша команда</h2>
+                <p>Служители кода, дизайна и аналитики.</p>
+                <ul>
+                    <li>28 человек</li>
+                    <li>+100 проектов</li>
+                    <li>7 лет в деле</li>
                 </ul>
             </div>
-            <div class="team-photo">
-                <img src="logo2.png" alt="Team members photo" width="340">
+            <div class="foto-komandy">
+                <img src="logo.png" alt="Команда проекта" width="320">
             </div>
         </section>
 
         <hr>
 
-        <section class="book-section" id="book">
-            <form class="book-form" action="#" method="post">
-                <h2 class="book-title">Get the book for free by leaving your contacts</h2>
-                <p class="book-description">Practical guide on planning and launching digital products.</p>
-                <label for="book-name">Your name</label>
-                <input type="text" id="book-name" name="book_name" placeholder="Name">
-                <label for="book-email">Email</label>
-                <input type="email" id="book-email" name="book_email" placeholder="Email">
-                <button type="submit">Get the book</button>
+        <!--kniga-->
+        <section class="sekciya-knigi">
+            <form class="forma-knigi" action="#" method="post">
+                <h2>Получите книгу бесплатно</h2>
+                <p>Оставьте контакты, чтобы забрать древний трактат.</p>
+                <label for="name-book">Имя</label>
+                <input type="text" id="name-book" name="name-book">
+                <label for="email-book">Email</label>
+                <input type="email" id="email-book" name="email-book">
+                <button type="submit">Забрать книгу</button>
             </form>
-            <div class="book-cover">
-                <img src="logo2.png" alt="Book cover preview" width="240">
+            <div class="oblozhka-knigi">
+                <img src="logo.png" alt="Обложка книги" width="220">
             </div>
         </section>
 
         <hr>
 
-        <section class="faq-section" id="faq">
-            <h2 class="section-title">FAQ</h2>
-            <p class="faq-intro">Answers to common questions about collaboration and development.</p>
-            <div class="faq-list">
-                <article class="faq-item">
-                    <h3 class="faq-question">What is the cost of a mobile application?</h3>
-                    <p class="faq-answer">The budget depends on platform scope, integrations, and design complexity.</p>
+        <!--faq-->
+        <section class="sekciya-faq">
+            <h2>FAQ</h2>
+            <p>Частые вопросы перед началом работы.</p>
+            <div class="spisok-faq">
+                <article class="vopros-faq">
+                    <h3>Сколько стоит приложение?</h3>
+                    <p>Зависит от сложности и объема задач.</p>
                 </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">How do you guarantee confidentiality?</h3>
-                    <p class="faq-answer">We sign an NDA before sharing project details and restrict repository access.</p>
+                <article class="vopros-faq">
+                    <h3>Как защищаете данные?</h3>
+                    <p>Подписываем соглашение и бережем тайны.</p>
                 </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">Do you provide post-release support?</h3>
-                    <p class="faq-answer">Yes, we offer SLA support packages, bug fixes, and iterative feature updates.</p>
+                <article class="vopros-faq">
+                    <h3>Есть ли поддержка после релиза?</h3>
+                    <p>Да, помогаем с обновлениями и исправлениями.</p>
                 </article>
             </div>
         </section>
@@ -255,19 +246,19 @@
 
     <hr>
 
-    <footer class="site-footer">
-        <div class="footer-brand">
-            <h2 class="footer-title">IT WEBSITE</h2>
-            <p class="footer-copy">All rights reserved.</p>
-        </div>
-        <div class="footer-contacts">
-            <ul class="footer-contact-list">
-                <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li>Moscow, Example st., 10</li>
-                <li><a href="https://example.com">Website</a></li>
-            </ul>
-        </div>
+    <!--Podval-->
+    <footer class="podval-saita">
+        <!--zagolovok footer-->
+        <h3>Связь с нами</h3>
+        <p>Мы всегда рады вашей жертве</p>
+        <hr>
+        <!--kontakt-->
+        <ul class="spisok-kontaktov">
+            <li>Продажа души</li>
+            <li>+79666666666</li>
+            <li>Anticrist@godlox.devilrulit.ru</li>
+        </ul>
+        <p>Все права защищены</p>
     </footer>
 
 </body>
