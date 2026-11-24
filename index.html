@@ -1,57 +1,273 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="src/assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBиC mobile — Development</title>
 </head>
 <body>
 
-    <header>
-        <img src="logo2.png" alt="Логотип компании" style="width: 100%; height: auto; display: block;">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <header class="site-header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="logo2.png" alt="WEBиC mobile logo" width="120">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#full-cycle">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#stages">Stages</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
-        <ul class="breadcrumbs">
-            <li>Главная</li>
-        </ul>
+        <div class="header-contacts">
+            <ul class="contact-links">
+                <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <h1 class="title-h1">Porta Umbrarum Magna</h1>
+    <hr>
 
-        <p class="text">Знания, стертые из истории. Реликвии, погребенные под пеплом веков. Мы открываем доступ к тому, что официальный мир объявил опасным мифом. Прикоснитесь к наследию древних богов и переступите порог неизведанного вместе с нами.</p>
+    <main class="page-main">
 
-        <h3 class="title-h3">Mercatus Tenebris Aeternus</h3>
-
-        <h4 class="title-h4">Инструменты и стандарты для верстки</h4>
-
-        <p class="text">Изучение базовой структуры HTML документов является фундаментальным шагом для любого начинающего специалиста.</p>
-
-        <h3 class="title-h3">Практические навыки верстки</h3>
-
-        <p class="text">Качественная верстка обеспечивает стабильную работу вашего сайта.</p>
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Development of mobile applications and web services of any complexity</h1>
+                <p class="hero-description">We build reliable mobile apps and scalable web platforms tailored to business goals.</p>
+                <form class="hero-callback-form" action="#" method="post">
+                    <p class="form-caption">Leave your contacts and we will call you back within 30 minutes</p>
+                    <label for="hero-phone">Phone number</label>
+                    <input type="tel" id="hero-phone" name="phone" placeholder="+7 (999) 000-00-00">
+                    <label for="hero-name">Your name</label>
+                    <input type="text" id="hero-name" name="name" placeholder="Name">
+                    <button type="submit">Send request</button>
+                </form>
+            </div>
+            <aside class="hero-showcase">
+                <h2 class="showcase-title">Mobile app previews</h2>
+                <p class="showcase-note">Examples of mobile interfaces from recent releases.</p>
+                <img src="logo2.png" alt="Mobile application screen preview 1" width="280">
+                <img src="logo2.png" alt="Mobile application screen preview 2" width="280">
+            </aside>
+        </section>
 
         <hr>
+
+        <section class="full-cycle-section" id="full-cycle">
+            <div class="cycle-overview">
+                <h2 class="section-title">Full development cycle</h2>
+                <p class="cycle-lead">We cover every stage from idea and architecture to launch and support.</p>
+                <h3 class="cycle-subtitle">Tech</h3>
+                <p class="cycle-text">Swift, Kotlin, TypeScript, React, Node.js, Python, PostgreSQL.</p>
+                <h3 class="cycle-subtitle">Stack</h3>
+                <p class="cycle-text">REST API, GraphQL, Docker, CI/CD, cloud infrastructure.</p>
+            </div>
+            <div class="cycle-directions">
+                <h3 class="directions-title">Key directions</h3>
+                <ul class="directions-list">
+                    <li>iOS development</li>
+                    <li>Android development</li>
+                    <li>Web development</li>
+                    <li>UI/UX design</li>
+                    <li>Testing</li>
+                    <li>Analytics</li>
+                    <li>Consulting</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="industries-section" id="industries">
+            <h2 class="section-title">Developed more than 100 projects in 15 industries</h2>
+            <p class="industries-intro">Experience across commercial and enterprise domains.</p>
+            <div class="industries-grid">
+                <ul class="industries-column">
+                    <li>E-commerce</li>
+                    <li>FinTech &amp; banking</li>
+                    <li>Media</li>
+                    <li>Construction</li>
+                    <li>Travel &amp; tourism</li>
+                </ul>
+                <ul class="industries-column">
+                    <li>Education</li>
+                    <li>Logistics &amp; delivery</li>
+                    <li>Healthcare</li>
+                    <li>Real estate</li>
+                    <li>Restaurants</li>
+                </ul>
+                <ul class="industries-column">
+                    <li>IT &amp; telecom</li>
+                    <li>Retail</li>
+                    <li>Services</li>
+                    <li>Religion</li>
+                    <li>EdTech &amp; portals</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">Projects we are proud of</h2>
+            <p class="projects-intro">Selected case studies with measurable product impact.</p>
+            <div class="project-filters">
+                <ul class="filters-list">
+                    <li>All</li>
+                    <li>Education</li>
+                    <li>Healthcare</li>
+                    <li>FinTech</li>
+                    <li>E-commerce</li>
+                    <li>Social apps</li>
+                    <li>Media</li>
+                </ul>
+            </div>
+            <article class="project-card">
+                <div class="project-details">
+                    <h3 class="project-title">I-teka</h3>
+                    <p class="project-description">Mobile platform connecting users, services, and local communities with fast booking and notifications.</p>
+                    <p class="project-meta">Region: International</p>
+                    <ul class="project-metrics">
+                        <li>400K+ active users</li>
+                        <li>200 000+ completed actions</li>
+                    </ul>
+                    <ul class="store-links">
+                        <li><a href="#app-store">App Store</a></li>
+                        <li><a href="#google-play">Google Play</a></li>
+                    </ul>
+                </div>
+                <div class="project-media">
+                    <img src="logo2.png" alt="I-teka mobile application on smartphones" width="320">
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="discuss-section" id="discuss">
+            <div class="discuss-info">
+                <h2 class="discuss-title">Let's discuss Your project</h2>
+                <p class="discuss-text">Tell us about your task and we will propose a technical solution and timeline.</p>
+            </div>
+            <form class="discuss-form" action="#" method="post">
+                <label for="discuss-phone">Phone number</label>
+                <input type="tel" id="discuss-phone" name="discuss_phone" placeholder="+7 (999) 000-00-00">
+                <label for="discuss-email">Email</label>
+                <input type="email" id="discuss-email" name="discuss_email" placeholder="name@example.com">
+                <button type="submit">Discuss project</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="stages-section" id="stages">
+            <h2 class="section-title">Application Development Stages</h2>
+            <p class="stages-intro">Transparent workflow divided into clear milestones.</p>
+            <div class="stages-grid">
+                <article class="stage-card">
+                    <h3 class="stage-title">Analysis</h3>
+                    <p class="stage-description">Requirements gathering, specification, and architecture planning.</p>
+                </article>
+                <article class="stage-card">
+                    <h3 class="stage-title">Design</h3>
+                    <p class="stage-description">User flows, wireframes, UI kit, and interactive prototypes.</p>
+                </article>
+                <article class="stage-card">
+                    <h3 class="stage-title">Development</h3>
+                    <p class="stage-description">Frontend, backend, and mobile application implementation.</p>
+                </article>
+                <article class="stage-card">
+                    <h3 class="stage-title">Testing</h3>
+                    <p class="stage-description">Functional, regression, and performance quality assurance.</p>
+                </article>
+                <article class="stage-card">
+                    <h3 class="stage-title">Launching</h3>
+                    <p class="stage-description">Production deployment, store publication, and monitoring setup.</p>
+                </article>
+                <article class="stage-card">
+                    <h3 class="stage-title">Support</h3>
+                    <p class="stage-description">Ongoing maintenance, updates, and feature scaling.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="team-section" id="team">
+            <div class="team-summary">
+                <h2 class="section-title">Our team</h2>
+                <p class="team-description">Engineers, designers, analysts, and project managers working as one unit.</p>
+                <ul class="team-stats">
+                    <li>28 specialists</li>
+                    <li>+100 delivered projects</li>
+                    <li>7 years in development</li>
+                </ul>
+            </div>
+            <div class="team-photo">
+                <img src="logo2.png" alt="Team members photo" width="340">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="book-section" id="book">
+            <form class="book-form" action="#" method="post">
+                <h2 class="book-title">Get the book for free by leaving your contacts</h2>
+                <p class="book-description">Practical guide on planning and launching digital products.</p>
+                <label for="book-name">Your name</label>
+                <input type="text" id="book-name" name="book_name" placeholder="Name">
+                <label for="book-email">Email</label>
+                <input type="email" id="book-email" name="book_email" placeholder="Email">
+                <button type="submit">Get the book</button>
+            </form>
+            <div class="book-cover">
+                <img src="logo2.png" alt="Book cover preview" width="240">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="faq-section" id="faq">
+            <h2 class="section-title">FAQ</h2>
+            <p class="faq-intro">Answers to common questions about collaboration and development.</p>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3 class="faq-question">What is the cost of a mobile application?</h3>
+                    <p class="faq-answer">The budget depends on platform scope, integrations, and design complexity.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">How do you guarantee confidentiality?</h3>
+                    <p class="faq-answer">We sign an NDA before sharing project details and restrict repository access.</p>
+                </article>
+                <article class="faq-item">
+                    <h3 class="faq-question">Do you provide post-release support?</h3>
+                    <p class="faq-answer">Yes, we offer SLA support packages, bug fixes, and iterative feature updates.</p>
+                </article>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <h3 class="title-h3">Связь с нами</h3>
+    <hr>
 
-        <p class="text">Мы открыты для любых новых предложений.</p>
-
-        <hr>
-
-        <ul>
-            <li>Консультации по всем возникшим вопросам</li>
-            <li>+7 (999) 000-00-00</li>
-            <li>info@example.com</li>
-        </ul>
-
-        <p class="text">Все права защищены</p>
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <h2 class="footer-title">IT WEBSITE</h2>
+            <p class="footer-copy">All rights reserved.</p>
+        </div>
+        <div class="footer-contacts">
+            <ul class="footer-contact-list">
+                <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li>Moscow, Example st., 10</li>
+                <li><a href="https://example.com">Website</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
