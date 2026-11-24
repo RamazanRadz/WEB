@@ -1,11 +1,113 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import url("fonts.css");
 
-.test {
-    color: yellow !important;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.test {
-    color: red !important;
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    margin: 0;
+    background-color: #f4f7fb;
+    font-size: 14px;
+    color: #1F3F68;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 8px;
+    color: #5A98D0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #5A98D0;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Параграфы */
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* Заголовок h1 */
+.title-h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+/*страница Контакты */
+.title-h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* Заголовки h3 */
+.title-h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Заголовки h4 */
+.title-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* Форма на странице Контакты с изображением на заднем фоне */
+.contact-form {
+    background-image: url("../../../logo2.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 540px;
+    margin: 20px auto;
+}
+
+/* Поля ввода input и textarea */
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    font-size: 16px;
+}
+
+/* Кнопка Submit  */
+.submit-btn {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #356EAD;
 }
